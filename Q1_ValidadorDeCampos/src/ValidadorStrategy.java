@@ -1,7 +1,5 @@
 abstract class ValidadorStrategy {
-    public boolean valida(String valor){
-        return false;
-    }
+    public abstract boolean valida(String valor);
 }
 
 class ValidaEmail extends ValidadorStrategy {
