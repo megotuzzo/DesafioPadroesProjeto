@@ -6,8 +6,15 @@ public class App {
         log.log("Mensagem de alarme 23");
         log.log("Mensagem de PANICO!!");
 
+        ILog logBzz = new LogBzzDecorator(log);
+        ILog logErro = new LogErroDecorator(log);
+
+        logBzz.log("Mensagem de bzz");
+        logErro.log("Mensagem de erro");
+
         for (String m : log) {
             System.out.println(m);
         }
+
     }
 }

@@ -3,7 +3,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
-public class LogSimplesSingleton implements Iterable<String> {
+public class LogSimplesSingleton implements ILog, Iterable<String> {
     private static LogSimplesSingleton instance;
     private List<String> mensagens;
 

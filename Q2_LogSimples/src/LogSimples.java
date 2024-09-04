@@ -3,7 +3,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
-public class LogSimples implements Iterable<String>{
+public class LogSimples implements ILog, Iterable<String>{
     private List<String> mensagens;
 
     public LogSimples(){
